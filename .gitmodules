@@ -1,0 +1,6 @@
+[submodule "External/vulkan"]
+	path = External/vulkan
+	url = https://github.com/KhronosGroup/Vulkan-Headers
+[submodule "External/MathLib"]
+	path = External/MathLib
+	url = https://github.com/NVIDIAGameWorks/MathLib.git

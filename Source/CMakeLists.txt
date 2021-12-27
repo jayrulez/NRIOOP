@@ -1,0 +1,20 @@
+add_subdirectory(Common)
+add_subdirectory(Base)
+add_subdirectory(Validation)
+
+if(NRI_D3D11_ENABLED OR NRI_D3D12_ENABLED)
+	add_subdirectory(D3DCommon)
+	if(NRI_D3D11_ENABLED)
+		add_subdirectory(D3D11)
+	endif()
+	if(NRI_D3D12_ENABLED)
+		add_subdirectory(D3D12)
+	endif()
+endif()
+
+if(NRI_VULKAN_ENABLED)
+	add_subdirectory(VK)
+endif()
+
+add_subdirectory(DeviceManager)
+add_subdirectory(Framework)
